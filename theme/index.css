@@ -14291,7 +14291,7 @@
     bottom: 0;
     left: 0;
     height: 3px;
-    background-color: #20a0ff;
+    background-color: #a82218;
     z-index: 1;
     transition: transform .3s cubic-bezier(.645,.045,.355,1);
     list-style: none;
@@ -14347,14 +14347,14 @@
     float: left;
 }
 .el-tabs__item {
-    padding: 0 16px;
-    height: 42px;
+    padding: 0 14px;
     box-sizing: border-box;
+    height: 42px;
     line-height: 42px;
     display: inline-block;
     list-style: none;
-    font-size: 14px;
-    color: rgb(131, 145, 165);
+    font-size: 16px;
+    color: rgb(71, 72, 79);
     position: relative;
 }
 .el-tabs__item .el-icon-close {
@@ -14380,7 +14380,7 @@
     cursor: default;
 }
 .el-tabs__item.is-active {
-    color: #20a0ff;
+    color: #a82218;
 }
 .el-tabs__content {
     overflow: hidden;

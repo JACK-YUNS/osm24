@@ -55,8 +55,7 @@ export default {
 <style scoped>
   .memorandum{
     float: left;
-    padding-bottom: 20px;
-    height: 635px;
+    padding-bottom: 30px;
   }
   .memorandum{
     width: 100%;

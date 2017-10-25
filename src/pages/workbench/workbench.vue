@@ -35,6 +35,7 @@ export default {
   .workbench-container{
     margin-top: 20px;
     width:100%;
+    min-width: 1200px;
   }
 
 

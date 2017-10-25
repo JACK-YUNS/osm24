@@ -220,15 +220,15 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .reservation{
+
     float: left;
     background: #ffffff;
     width:100%;
-    /*padding-right: 100px;*/
-    /*padding-bottom: 50px;*/
+    padding-bottom: 7px;
+
   }
   .reservation-wrap{
     padding-bottom:7px;
-    height:575px;
   }
   .reservation-title{
     height: 48px;

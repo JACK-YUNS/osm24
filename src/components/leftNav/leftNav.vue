@@ -1,5 +1,8 @@
 <template>
   <div class="leftNav-list">
+    <div class="logo">
+      <img src="../../../static/img/logo.png" alt="">
+    </div>
     <ul>
       <router-link :to="'/home/workbench'">
         <li class="leftNav-list-item1">
@@ -22,37 +25,6 @@
       </li>
       </router-link>
     </ul>
-
-
-
-
-    <!--<el-row class="tac">-->
-      <!--<el-col :span="24">-->
-        <!--<el-menu :default-active="$route.path" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose"  unique-opened router>-->
-          <!--<el-submenu index="1">-->
-            <!--<template slot="title" class="leftNav-list-titles"><img src="../../../static/img/home.png" alt=""><span class="leftNav-list-title">工作台</span></template>-->
-              <!--<el-menu-item index="/home/workbench" >选项1</el-menu-item>-->
-              <!--<el-menu-item index="1-2" >选项2</el-menu-item>-->
-          <!--</el-submenu>-->
-          <!--<el-submenu index="2">-->
-            <!--<template slot="title" class="leftNav-list-titles"><img src="../../../static/img/customer.png" alt=""><span class="leftNav-list-title">客户管理</span></template>-->
-            <!--<el-menu-item index="/home/customer" >选项1</el-menu-item>-->
-            <!--<el-menu-item index="2-2" >选项2</el-menu-item>-->
-          <!--</el-submenu>-->
-          <!--<el-submenu index="3">-->
-            <!--<template slot="title" class="leftNav-list-titles"><img src="../../../static/img/bespeak.png" alt=""><span class="leftNav-list-title">预约服务</span></template>-->
-            <!--<el-menu-item index="/home/appointment" >选项1</el-menu-item>-->
-            <!--<el-menu-item index="3-2" >选项2</el-menu-item>-->
-          <!--</el-submenu>-->
-          <!--<el-submenu index="4">-->
-            <!--<template slot="title" class="leftNav-list-titles"><img src="../../../static/img/services-light.png" alt=""><span class="leftNav-list-title">服务管理</span></template>-->
-            <!--<el-menu-item index="/home/service" >选项1</el-menu-item>-->
-            <!--<el-menu-item index="4-2" >选项2</el-menu-item>-->
-          <!--</el-submenu>-->
-        <!--</el-menu>-->
-      <!--</el-col>-->
-    <!--</el-row>-->
-
   </div>
 </template>
 
@@ -80,7 +52,6 @@ export default {
     width:100%;
     height:100%;
     cursor: pointer;
-    padding-top: 20px;
   }
   .leftNav-itemIcon img{
     width: 40px;
@@ -89,14 +60,14 @@ export default {
   }
   .leftNav-list ul li{
     height: 40px;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 40px;
     padding-left: 74px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   ;
   }
   .leftNav-list-item1{
-    background: url("../../../static/img/home.png") no-repeat 15px;
+    background: url("../../../static/img/workgroup.png") no-repeat 15px;
   }
   .leftNav-list-item2{
     background: url("../../../static/img/customer.png") no-repeat 15px;
@@ -105,10 +76,31 @@ export default {
     background: url("../../../static/img/bespeak.png") no-repeat 15px;
   }
   .leftNav-list-item4{
-    background: url("../../../static/img/services-light.png") no-repeat 15px;
+    background: url("../../../static/img/services.png") no-repeat 15px;
+  }
+  .router-link-active .leftNav-list-item1{
+    background: url("../../../static/img/workgroup-w.png") no-repeat 15px;
+  }
+  .router-link-active .leftNav-list-item2{
+    background: url("../../../static/img/customer-w.png") no-repeat 15px;
+  }
+  .router-link-active .leftNav-list-item3{
+    background: url("../../../static/img/bespeak-w.png") no-repeat 15px;
+  }
+  .router-link-active .leftNav-list-item4{
+    background: url("../../../static/img/services-w.png") no-repeat 15px;
   }
   .router-link-active{
-    border-right:3px solid red;
     display: block;
+    background: #a82218;
+    color: #ffffff;
+  }
+  .logo{
+    width: 160px;
+    height: 168px;
+  }
+  .logo img{
+    margin-left: 37px;
+    margin-top: 30px;
   }
 </style>

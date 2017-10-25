@@ -1,33 +1,23 @@
 <template>
   <div class="headerNav">
-    <!--<el-row>-->
-      <!--<el-col :span="1">-->
-        <!--<div class="grid-content bg-purple">-->
-          <!--<img src="../../../static/img/logo.png" alt="" class="logo">-->
-        <!--</div>-->
-      <!--</el-col>-->
-      <!--<el-col :span="2">-->
-        <!--<div class="grid-content bg-purple-light">-->
-          <!--<span class="headerNav-title">门店管理</span>-->
-        <!--</div>-->
-      <!--</el-col>-->
-      <!--<el-col :span="17">-->
-        <!--<div class="grid-content bg-purple headerNav-position">-->
-          <!--<img src="../../../static/img/position.png" alt="" class="positionIcon">-->
-          <!--<span>禧佑健康管理京城大厦店</span>-->
-        <!--</div>-->
-      <!--</el-col>-->
-      <!--<el-col :span="3">-->
-        <!--<div class="grid-content bg-purple-light admin">-->
-          <!--<header-section></header-section>-->
-        <!--</div>-->
-      <!--</el-col>-->
-      <!--<el-col :span="1">-->
-        <!--<div class="grid-content bg-purple-light">-->
-          <!--<span class="headerNav-signOut">退出</span>-->
-        <!--</div>-->
-      <!--</el-col>-->
-    <!--</el-row>-->
+    <el-row>
+      <el-col :span="20">
+        <div class="grid-content bg-purple headerNav-position">
+          <img src="../../../static/img/position.png" alt="" class="positionIcon">
+          <span>禧佑健康管理京城大厦店</span>
+        </div>
+      </el-col>
+      <el-col :span="3">
+        <div class="grid-content bg-purple-light admin">
+          <header-section></header-section>
+        </div>
+      </el-col>
+      <el-col :span="1">
+        <div class="grid-content bg-purple-light">
+          <span class="headerNav-signOut">退出</span>
+        </div>
+      </el-col>
+    </el-row>
   </div>
 </template>
 
@@ -52,22 +42,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .logo {
-    width: 33.3px;
-    height: 48px;
-    object-fit: contain;
-    margin-left: 15px;
-    margin-top: 6px;
-  }
-  .headerNav-title{
-    width: 96px;
-    font-family: PingFangSC;
-    font-size: 24px;
-    font-weight: 600;
-    height: 60px;
-    line-height: 60px;
-    text-align: left;
-    color: #ffffff;
+  .headerNav{
+    background: #a82218;
+    height:100%;
   }
   .headerNav-position{
     height:60px;
@@ -75,7 +52,7 @@ export default {
     font-size: 18px;
     color: #ffffff;
     font-family: PingFangSC;
-
+    padding-left:31px;
 
   }
   .positionIcon{
